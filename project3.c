@@ -14,5 +14,7 @@ int main() {
             printf("ChatBot : Au revoir\n");
             break;
         }
+        int found = 0;
+        char botReply[MAX_U] = "Je ne comprends pas...";
     }
 }
