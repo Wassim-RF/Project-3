@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 #define MAX 100
-#define HISTO_SIZE 100
 
 int main() {
     char input[MAX];
     char *positifs[] = {"happy", "bien", "cool"};
     char *negatifs[] = {"sad", "triste", "mauvais"};
     char *neutres[]  = {"bonjour", "salut", "hello"};
-    char *reponsesPos[] = {"Super !", "Genial d'entendre ça !", "Top"};
+    char *reponsesPos[] = {"Super !", "Genial d'entendre ca !", "Top"};
     char *reponsesNeg[] = {"Oh courage...", "Ne t'inquiete pas ca va aller.", "Desole d'entendre ca."};
     char *reponsesNeu[] = {"Salut ", "Hey !", "Bonjour "};
 
@@ -19,7 +17,6 @@ int main() {
     int nbNeg = sizeof(negatifs) / sizeof(negatifs[0]);
     int nbNeu = sizeof(neutres)  / sizeof(neutres[0]);
 
-    srand(time(NULL)); 
 
     while (1) {
         printf("\nUtilisateur : ");
